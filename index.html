@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f3ed">
+  <title>Daymark | To-do list</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#today" aria-label="Daymark home">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span>daymark</span>
+      </a>
+      <p class="topbar-note">A little space to get things done.</p>
+    </header>
+
+    <section class="workspace" id="today" aria-labelledby="page-title">
+      <div class="workspace-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR LIST</p>
+          <h1 id="page-title">Today<span class="title-period">.</span></h1>
+        </div>
+        <div class="day-marker" aria-label="Daily checklist">
+          <span class="day-marker-number">01</span>
+          <span class="day-marker-label">A FRESH<br>START</span>
+        </div>
+      </div>
+
+      <div class="task-layout">
+        <section class="task-section today-section" aria-labelledby="today-heading">
+          <div class="section-heading">
+            <h2 id="today-heading">The essentials</h2>
+            <span class="section-count">06 ITEMS</span>
+          </div>
+          <ul class="task-list">
+            <li class="task-row priority-task">
+              <input class="task-check" type="checkbox" id="task-priority">
+              <label for="task-priority"><span class="task-title">Choose the most important task</span><span class="task-note">Give your attention a direction</span></label>
+              <span class="priority-mark" aria-label="Priority"></span>
+            </li>
+            <li class="task-row">
+              <input class="task-check" type="checkbox" id="task-work">
+              <label for="task-work"><span class="task-title">Finish one work or study task</span><span class="task-note">One thing, done with care</span></label>
+              <span class="task-category">FOCUS</span>
+            </li>
+            <li class="task-row">
+              <input class="task-check" type="checkbox" id="task-messages">
+              <label for="task-messages"><span class="task-title">Reply to important messages</span><span class="task-note">Clear a little space in your inbox</span></label>
+              <span class="task-category">LIFE</span>
+            </li>
+            <li class="task-row">
+              <input class="task-check" type="checkbox" id="task-break">
+              <label for="task-break"><span class="task-title">Take a break and get some fresh air</span><span class="task-note">Step away from the screen</span></label>
+              <span class="task-category">RESET</span>
+            </li>
+            <li class="task-row">
+              <input class="task-check" type="checkbox" id="task-tidy">
+              <label for="task-tidy"><span class="task-title">Tidy up one small area</span><span class="task-note">A clear corner is a good start</span></label>
+              <span class="task-category">HOME</span>
+            </li>
+            <li class="task-row">
+              <input class="task-check" type="checkbox" id="task-tomorrow">
+              <label for="task-tomorrow"><span class="task-title">Write down what to handle tomorrow</span><span class="task-note">Leave yourself a helpful note</span></label>
+              <span class="task-category">LATER</span>
+            </li>
+          </ul>
+        </section>
+
+        <aside class="week-panel" aria-labelledby="week-heading">
+          <div class="week-panel-top">
+            <p class="eyebrow"><span class="eyebrow-line"></span> LOOKING AHEAD</p>
+            <span class="week-spark" aria-hidden="true">✳</span>
+          </div>
+          <h2 id="week-heading">This week</h2>
+          <p class="week-intro">A few good things to make room for.</p>
+          <ul class="week-list">
+            <li>
+              <input class="task-check" type="checkbox" id="task-calendar">
+              <label for="task-calendar">Review appointments and deadlines</label>
+            </li>
+            <li>
+              <input class="task-check" type="checkbox" id="task-groceries">
+              <label for="task-groceries">Plan meals and pick up groceries</label>
+            </li>
+            <li>
+              <input class="task-check" type="checkbox" id="task-move">
+              <label for="task-move">Make time for movement or a favorite activity</label>
+            </li>
+          </ul>
+          <div class="week-note">
+            <span class="note-dot" aria-hidden="true"></span>
+            <p>Small steps count, too.</p>
+          </div>
+        </aside>
+      </div>
+      <footer class="page-footer"><span>DAYMARK</span><span>ONE THING AT A TIME</span></footer>
+    </section>
+  </main>
+</body>
+</html>
